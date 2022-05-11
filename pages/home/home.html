@@ -1,0 +1,16 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Модуль КН-31 Іщенко Дмитро 11.05.22 </ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<h2>Рішення</h2>
+	<p>
+	</p>
+	<label for="n">Введіть N</label>
+	<input type="number"  value="15" #n>
+	<button (click)="ras(n.value)">Розрахунок</button>
+	
+	<p *ngFor="let rez of rezult">{{rez}}</p>
+</ion-content>
